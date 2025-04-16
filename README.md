@@ -73,13 +73,13 @@ python generate_samples.py
 
 ```
 
-4. Train the ML model (if not already trained):
+5. Train the ML model (if not already trained):
 
 ```bash
 python train_model.py
 ```
 
-5. Run the web app:
+6. Run the web app:
 
 ```bash
 streamlit run app.py
