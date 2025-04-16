@@ -30,7 +30,7 @@ A proof-of-concept AI/ML web app that detects signs of cognitive stress or decli
 voice_cognitive_decline/  
 ├── app.py                  → Streamlit web app  
 ├── train_model.py          → Trains & saves model as detector.pkl  
-├── generate_samples.py     → Generates synthetic test samples  
+├── generate_samples.py     → Generates synthetic test samples in the data folder  
 ├── models/  
 │   └── detector.pkl        → Saved ML model (auto-generated)  
 ├── results/                → Output results  
@@ -49,7 +49,7 @@ voice_cognitive_decline/
 1. Clone the repo and set up a virtual environment:
 
 ```bash
-git clone https://github.com/your-username/voice_cognitive_decline.git
+git clone https://github.com/KarthikKankatala/voice_cognitive_decline.git
 cd voice_cognitive_decline
 python -m venv venv
 venv\Scripts\activate  # For Windows
@@ -65,6 +65,13 @@ pip install -r requirements.txt
 
 Download from https://ffmpeg.org/download.html  
 Make sure it’s added to your system PATH.
+
+4. Generate synthetic audio samples (optional, if you need more test data)
+
+```bash
+python generate_samples.py
+
+```
 
 4. Train the ML model (if not already trained):
 
@@ -111,12 +118,6 @@ Then click **🔍 Analyze Microphone Input** and view the results.
 
 This is a demo/prototype and **not a clinical tool**. Do not use for health-related decisions.  
 For research/educational purposes only.
-
----
-
-## 📢 License
-
-MIT License
 
 ---
 
