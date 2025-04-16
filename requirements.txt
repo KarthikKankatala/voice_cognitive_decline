@@ -1,0 +1,16 @@
+numpy
+scipy
+pandas
+scikit-learn
+librosa
+soundfile
+python-speech-features
+SpeechRecognition
+gtts
+pydub
+streamlit
+streamlit-webrtc
+joblib
+matplotlib
+
+
